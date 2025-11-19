@@ -2,7 +2,8 @@ nama = "MUAZ       IBNU  SAFAR "
 
 # petunjuk:
 # lihat screenshot
-# ganti angka 1000 dengan statement yg benar
+# hasil proses ditampung di variabel "hasil"
+# ganti angka 1000 variabel "hasil" tersebut
 # output gunakan print() dan f""
 
 print("")
@@ -10,31 +11,67 @@ print("------------------------------")
 print("")
 print(f"nama: '{nama}'")
 print("")
-print("------------------------------")
+print("------------------------------\n")
 
-print("")
-print("replace spasi dgn '-':", nama.replace(" ", "-"))
-print("replace IBNU dgn 'ibin':", nama.replace("IBNU", "ibin"))
+print("replace spasi dgn '-'")
+# variabel = .replace(old, new)
+hasil = nama.replace(" ", "-")
+print("hasil:", hasil)
 
-print("")
-print("split nama jadi list:", nama.split())
-print("join list dgn 1 spasi:", " ".join(nama.split()))
 
-print("")
+print("\nreplace IBNU dgn 'ibin'")
+# variabel = .replace(old, new)
+hasil = nama.replace("IBNU", "ibin")
+print("hasil:", hasil)
+
+
+print("\nsplit nama jadi list")
+# variabel = .split()
+hasil = nama.split()
+print("hasil:", hasil)
+
+
+print("\nsplit nama jadi list -> join dgn 1 spasi")
+# variabel = .split()
+# variabel = <spasi>.join(variabel)
+hasil = nama.split()
+hasil = " ".join(hasil)
+print("hasil:", hasil)
+
+
+print("\nsplit nama jadi list -> balik pakai reversed() -> join dgn 1 spasi")
+# info: fungsi reversed() tidak merubah variabel tapi mengembalikan copy hasil perubahan
+# variabel = .split()
+# variabel = reversed(variabel)
+# variabel = <spasi>.join(variabel)
+hasil = nama.split()
+hasil = reversed(hasil)
+hasil = " ".join(hasil)
+print("hasil:", hasil)
+
+
+print("\nsplit nama jadi list -> balik pakai .reverse() -> join dgn 1 spasi")
+# info: method .reverse() akan merubah (mutate) variabel itu sendiri
+# variabel = .split()
+# .reverse()
+# variabel = <spasi>.join(variabel)
+hasil = nama.split()
+hasil.reverse()
+hasil = " ".join(hasil)
+print("hasil:", hasil)
+
+
 print(
-    "balik kata (pakai reversed()):",
-    " ".join(reversed(nama.split())),
+    "\nsplit nama jadi list huruf pakai list() -> balik pakai .reverse() -> join -> split -> join dgn 1 spasi"
 )
-
-gabung = nama.split()
-gabung.reverse()
-print("balik kata (pakai .reverse):", " ".join(gabung))
-
-
-print("")
-kebalik = list(nama)
-kebalik.reverse()
-kebalik = "".join(kebalik)
-kebalik = kebalik.split()
-kebalik = " ".join(kebalik)
-print("balik huruf (pakai list()):", kebalik)
+# variabel = list(<string>)
+# variabel.reverse()
+# variabel = <separator>.join(variabel)
+# variabel = variabel.split()
+# variabel = <separator>.join(variabel)
+hasil = list(nama)
+hasil.reverse()
+hasil = "".join(hasil)
+hasil = hasil.split()
+hasil = " ".join(hasil)
+print("hasil:", hasil)
