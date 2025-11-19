@@ -2,16 +2,13 @@ nama = "MUAZ       IBNU  SAFAR "
 
 # petunjuk:
 # lihat screenshot
-# hasil proses ditampung di variabel "hasil"
-# ganti angka 1000 variabel "hasil" tersebut
+# hasil proses ditampung di variabel, namai "hasil"
+# ganti angka 1000 variabel tersebut
 # output gunakan print() dan f""
 
-print("")
-print("------------------------------")
-print("")
+print("\n------------------------------\n")
 print(f"nama: '{nama}'")
-print("")
-print("------------------------------\n")
+print("\n------------------------------\n")
 
 
 print("replace spasi dgn '-'")

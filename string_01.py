@@ -3,24 +3,46 @@ nama_belakang = "ibnu safar"
 
 # petunjuk:
 # lihat screenshot
-# ganti angka 1000 dengan statement yg benar
+# hasil proses ditampung di variabel, namai "hasil"
+# ganti angka 1000 variabel tersebut
 # output gunakan print()
 
-print("")
-print("------------------------------")
-print("")
+print("\n------------------------------\n")
 print("nama_depan", 1000)
 print("nama_belakang", 1000)
-print("")
-print("------------------------------")
+print("\n------------------------------\n")
 
-print("")
-print("type nama_depan adalah string:", 1000)
 
-print("")
-print("nama lengkap:", 1000)
-print("lowercase:", 1000)
-print("uppercase:", 1000)
-print("titlecase:", 1000)
-print("swapcase:", 1000)
-print("capitalized:", 1000)
+print("cek apakah type nama_depan itu string")
+# variabel = type(var) == str
+print("hasil:", 1000)
+
+
+print("\nnama lengkap")
+# hasil = var1 + <spasi> + var2
+print("hasil:", 1000)
+
+
+print("\nnama lengkap dalam lowercase")
+# variabel = .lower() + <spasi> + .lower()
+print("hasil:", 1000)
+
+
+print("\nnama lengkap dalam uppercase")
+# variabel = .upper() + <spasi> + .upper()
+print("hasil:", 1000)
+
+
+print("\nnama lengkap dalam capital")
+# variabel = .capitalize() + <spasi> + .capitalize()
+print("hasil:", 1000)
+
+
+print("\nnama lengkap dalam titlecase")
+# variabel = .title() + <spasi> + .title()
+print("hasil:", 1000)
+
+
+print("\nnama lengkap dalam swapcase")
+# variabel = .swapcase() + <spasi> + .swapcase()
+print("hasil:", 1000)
