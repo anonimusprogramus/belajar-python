@@ -3,7 +3,7 @@ nama = "MUAZ       IBNU  SAFAR "
 # petunjuk:
 # lihat screenshot
 # hasil proses ditampung di variabel, namai "hasil"
-# ganti angka 1000 variabel tersebut
+# ganti angka 1000 dgn variabel tersebut
 # output gunakan print() dan f""
 
 print("\n------------------------------\n")

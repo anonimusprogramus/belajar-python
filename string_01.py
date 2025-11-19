@@ -4,7 +4,7 @@ nama_belakang = "ibnu safar"
 # petunjuk:
 # lihat screenshot
 # hasil proses ditampung di variabel, namai "hasil"
-# ganti angka 1000 variabel tersebut
+# ganti angka 1000 dgn variabel tersebut
 # output gunakan print()
 
 print("\n------------------------------\n")
