@@ -13,6 +13,7 @@ print(f"nama: '{nama}'")
 print("")
 print("------------------------------\n")
 
+
 print("replace spasi dgn '-'")
 # variabel = .replace(old, new)
 hasil = nama.replace(" ", "-")
